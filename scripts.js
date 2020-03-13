@@ -13,9 +13,7 @@ function convertBinary(){
         }
     }
     if (error == 0){
-        for(var i=1; i<=binary.length; i++){
-            total = total + (binary[i-1]*Math.pow(2, i));
-        }
+        total = parseInt(binary, 2);
         $("#errorText").text("");
         $("#decimalNumber").text("Decimal number: "+total);
     }else if(error = 1){
